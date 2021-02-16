@@ -22,6 +22,7 @@ Here you can change the opacity level and the main color of the browser. Also th
 :root {
     --srf-color-light: #F4E8Fb;
     --srf-color-primary: #24283b;
+    --srf-color-secondary: #282d42;
     --srf-color-dark: #1E2235;
     --srf-color-selection: #8E71A2;
 }
@@ -75,6 +76,10 @@ T A B S
     border: none !important;
 }
 
+.tab-label[selected='true'] {
+    color: var(--srf-color-light) !important;
+}
+
 .tabbrowser-tab:hover {
     background-color: var(--srf-color-selection) !important;
 }
@@ -82,7 +87,7 @@ T A B S
 .tab-background[selected='true'] {
     -moz-appearance: none !important;
     background-image: none !important;
-    background-color: var(--srf-color-dark) !important;
+    background-color: var(--srf-color-secondary) !important;
 }
 
 .tabbrowser-tabs {
@@ -242,13 +247,14 @@ U R L - B A R
     top: calc(
         (var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2
     ) !important;
+    background-color: var (--srf-color-primary) !important;
 }
 
 @-moz-document url(chrome://browser/content/browser.xhtml)
 {
     #urlbar[breakout][breakout-extend] > #urlbar-background {
         animation-name: none !important;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
     }
 }
 

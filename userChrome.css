@@ -20,10 +20,10 @@ Here you can change the opacity level and the main color of the browser. Also th
 */
 
 :root {
-    --srf-color-light: #F3F4F5;
-    --srf-color-primary: #242c34;
-    --srf-color-secondary: #343c44;
-    --srf-color-dark: #141c24;
+    --srf-color-light: #ecf2fc;
+    --srf-color-primary: #2c323c;
+    --srf-color-secondary: #3c424c;
+    --srf-color-dark: #1c222c;
     --srf-color-selection: #e06c75;
 }
 
@@ -82,6 +82,7 @@ T A B S
 
 .tabbrowser-tab:hover {
     background-color: var(--srf-color-selection) !important;
+    color: var(--srf-color-dark) !important;
 }
 
 .tab-background[selected='true'] {
@@ -345,8 +346,9 @@ and erease the second block.
 
 /* font */ 
 * {
-   font-family: "Iosevka Custom Narrow" !important;
-   font: "Iosevka Custom Narrow" !important;
+   font-family: "Iosevka" !important;
+   font-weight: 400 !important;
+   font: "Iosevka" !important;
    font-size: 10.3pt !important; 
 }
 

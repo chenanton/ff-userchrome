@@ -179,6 +179,11 @@ Here you can comment if you want your buttons to be showed up!
 /* 
 N A V B A R
 */
+#urlbar-container {
+    background: var(--srf-color-primary) !important;
+    background-color: var(--srf-color-primary) !important;
+    /* background-color: red !important; */
+}
 
 #navigator-toolbox::after {
     border: 0px !important;
@@ -346,9 +351,8 @@ and erease the second block.
 
 /* font */ 
 * {
-   font-family: "Iosevka" !important;
+   font-family: "PragmataPro" !important;
    font-weight: 400 !important;
-   font: "Iosevka" !important;
    font-size: 10.3pt !important; 
 }
 

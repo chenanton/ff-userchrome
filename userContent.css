@@ -20,3 +20,17 @@ ___ _            _                 _
 	background-color: var(--srf-color-primary) !important;
     }
 }
+
+@-moz-document domain(monkeytype.com) {
+    body { 
+	font-family: "PragmataPro" !important; 
+	font-weight: 200 !important;
+    }
+}
+
+@-moz-document domain(typings.gg) {
+    body { 
+	font-family: "PragmataPro" !important; 
+	font-weight: 200 !important;
+    }
+}
